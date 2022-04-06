@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des Annonces!{% endblock %}
+
+{% block body %}
+{% for annonce in annonce %}
+<h2> {{annonce.titre}} </h2>
+{% endfor %}
+{% endblock %}

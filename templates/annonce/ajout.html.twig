@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>MYJOBS</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>MYJOBS</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('build/final/assets/css/bootstrap.min.css') }}">
+
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="{{ asset('build/final/assets/css/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/final/assets/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/final/assets/css/et-line.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/final/assets/css/bootstrap-select.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/final/assets/css/plyr.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/final/assets/css/flag.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/final/assets/css/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/final/assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/final/assets/css/jquery.nstSlider.min.css') }}">
+
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="{{ asset('build/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/dashboard.css') }}">
+
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7CRoboto:300i,400,500" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('build/final/images/favicon.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('build/final/images/apple-touch-icon.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('build/final/images/icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('build/final/images/icon-114x114.png') }}">
+
+</head>
+<body>
+
+<header class="header-2">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="header-top">
+                    <div class="logo-area">
+                        <a href="home"><img src="{{ asset('build/final/images/logo-2.png') }}" alt=""></a>
+                    </div>
+                    <div class="header-top-toggler">
+                        <div class="header-top-toggler-button"></div>
+                    </div>
+                    <div class="top-nav">
+                        <div class="dropdown header-top-notification">
+                            <a href="#" class="notification-button">Notification</a>
+                            <div class="notification-card">
+                                <div class="notification-head">
+                                    <span>Notifications</span>
+                                    <a href="#">Mark all as read</a>
+                                </div>
+                                <div class="notification-body">
+                                    <a href="home-2.html" class="notification-list">
+                                        <i class="fas fa-bolt"></i>
+                                        <p>Your Resume Updated!</p>
+                                        <span class="time">5 hours ago</span>
+                                    </a>
+                                    <a href="#" class="notification-list">
+                                        <i class="fas fa-arrow-circle-down"></i>
+                                        <p>Someone downloaded resume</p>
+                                        <span class="time">11 hours ago</span>
+                                    </a>
+                                    <a href="#" class="notification-list">
+                                        <i class="fas fa-check-square"></i>
+                                        <p>You applied for Project Manager <span>@homeland</span></p>
+                                        <span class="time">11 hours ago</span>
+                                    </a>
+                                    <a href="#" class="notification-list">
+                                        <i class="fas fa-user"></i>
+                                        <p>You changed password</p>
+                                        <span class="time">5 hours ago</span>
+                                    </a>
+                                    <a href="#" class="notification-list">
+                                        <i class="fas fa-arrow-circle-down"></i>
+                                        <p>Someone downloaded resume</p>
+                                        <span class="time">11 hours ago</span>
+                                    </a>
+                                </div>
+                                <div class="notification-footer">
+                                    <a href="#">See all notification</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown header-top-account">
+                            <a href="#" class="account-button">My Account</a>
+                            <div class="account-card">
+                                <div class="header-top-account-info">
+                                    <a href="#" class="account-thumb">
+                                        <img src="{{ asset("build/final/images/account/thumb-1.jpg") }}" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="account-body">
+                                        <h5><a href="#">{{ app.user.firstname}} {{ app.user.lastname }}</a></h5>
+                                        <span class="mail">{{ app.user.email }}</span>
+                                    </div>
+                                </div>
+                                <ul class="account-item-list">
+                                    <li><a href="#"><span class="ti-user"></span>Compte</a></li>
+                                    <li><a href="#"><span class="ti-power-off"></span>Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg cp-nav-2">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="menu-item active"><a title="Home" href="home-1.html">Home</a></li>
+                            <li class="menu-item dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Offres de travail</a>
+                                <ul  class="dropdown-menu">
+                                    <li class="menu-item"><a  href="job-listing.html">Listes des offres</a></li>
+
+                                    <li class="menu-item"><a  href="post-job.html">Annonce de recherche de travail</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a title="" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Travailleur</a>
+                                <ul  class="dropdown-menu">
+                                    <li class="menu-item"><a  href="add-resume.html">Ajouter CV</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="menu-item dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Dashboard</a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item"><a  href="/user">Dashboard</a></li>
+                                    <li class="menu-item"><a  href="/user/modifier">Modifier Profile</a></li>
+                                    <li class="menu-item"><a  href="add-resume.html">Ajouter CV</a></li>
+                                    <li class="menu-item"><a  href="resume.html">CV</a></li>
+                                    <li class="menu-item"><a  href="dashboard-applied.html">Emplois postulés</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item dropdown">
+                                <a title="" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <ul  class="dropdown-menu">
+                                    <li class="menu-item"><a href="about-us.html">À propos de nous</a></li>
+                                    <li class="menu-item"><a href="how-it-work.html">Comment ça fonctionne</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item post-job"><a href="post-job.html"><i class="fas fa-plus"></i>Postuler offre de travail</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="alice-bg padding-top-70 padding-bottom-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="breadcrumb-area">
+                    <h1>Postuler annonce de travail</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Postulez travail</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumb-form">
+                    <form action="#">
+                        <input type="text" placeholder="Enter Keywords">
+                        <button><i data-feather="search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<div class="alice-bg section-padding-bottom">
+    <div class="container no-gliters">
+        <div class="row no-gliters">
+            <div class="col">
+                <div class="post-container">
+                    <div class="post-content-wrapper">
+                        <form action="#" class="job-post-form">
+                            <div class="basic-info-input">
+                                {{ form_start(annonceForm) }}
+                                <h4><i data-feather="plus-circle"></i>Postulez Annonce</h4>
+                                <div id="job-title" class="form-group row">
+                                    <label class="col-md-3 col-form-label">Titre de travail</label>
+                                    <div class="col-md-9">
+                                        {{ form_widget(annonceForm.titre, {'attr': {'class': 'form-control' , 'placeholder': 'Votre titre de travail ici!' } }) }}
+                                    </div>
+                                </div>
+                                <div id="job-summery" class="row">
+                                    <label class="col-md-3 col-form-label">Résume travail</label>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    {{ form_widget(annonceForm.categorie, {'attr': {'class': 'form-control' , 'placeholder': 'Sélectionner catégorie' } }) }}
+                                                    <i class="fa fa-caret-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    {{ form_widget(annonceForm.type, {'attr': {'class': 'form-control' , 'placeholder': 'type de travail' } }) }}
+                                                    <i class="fa fa-caret-down"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    {{ form_widget(annonceForm.country, {'attr': {'class': 'form-control' , 'placeholder': 'Sélectionner catégorie' } }) }}
+                                                    <i class="fa fa-caret-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+
+                                                <div class="form-group">
+                                                    {{ form_widget(annonceForm.city, {'attr': {'class': 'form-control' , 'placeholder': 'Exerience (Optionel)' } }) }}
+
+                                                    <i class="fa fa-caret-down"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    {{ form_widget(annonceForm.exp, {'attr': {'class': 'form-control' , 'placeholder': 'Exerience (Optionel)' } }) }}
+
+                                                    <i class="fa fa-caret-down"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    {{ form_widget(annonceForm.salaire, {'attr': {'class': 'form-control' , 'placeholder': 'Intervale salaire' } }) }}
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    {{ form_widget(annonceForm.qualification, {'attr': {'class': 'form-control' , 'placeholder': 'Qualification' } }) }}
+
+                                                    <i class="fa fa-caret-down"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    {{ form_widget(annonceForm.sex, {'attr': {'class': 'form-control' , 'placeholder': 'Sex' } }) }}
+
+                                                    <i class="fa fa-caret-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group datepicker">
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="job-description" class="row">
+                                    <label class="col-md-3 col-form-label">Job Description</label>
+                                    <div class="col-md-9">
+                                        {{ form_widget(annonceForm.description, {'attr': {'class': 'tinymce-editor tinymce-editor-1' , 'placeholder': 'Texte description ici!' } }) }}
+                                    </div>
+                                </div>
+                                <div id="response" class="row">
+                                    <label class="col-md-3 col-form-label">Responsibilities</label>
+                                    <div class="col-md-9">
+                                        {{ form_widget(annonceForm.responsibilities, {'attr': {'class': 'tinymce-editor tinymce-editor-1' , 'placeholder': 'Texte description ici!' } }) }}
+                                    </div>
+                                </div>
+                                <div id="education" class="row">
+                                    <label class="col-md-3 col-form-label">Education</label>
+                                    <div class="col-md-9">
+                                        {{ form_widget(annonceForm.eduexp, {'attr': {'class': 'tinymce-editor tinymce-editor-1' , 'placeholder': 'Texte description ici!' } }) }}
+                                    </div>
+                                </div>
+                                <div id="others" class="row">
+                                    <label class="col-md-3 col-form-label">Autres bénéfices</label>
+                                    <div class="col-md-9">
+                                        {{ form_widget(annonceForm.autres, {'attr': {'class': 'tinymce-editor tinymce-editor-1' , 'placeholder': 'Texte description ici!' } }) }}
+                                    </div>
+                                </div>
+                                <div id="about-company" class="row">
+                                    <label class="col-md-3 col-form-label">About Company</label>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Company Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Web Address">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" placeholder="Company Profile"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label"></label>
+                                    <div class="col-md-9">
+                                        {{ form_widget(annonceForm.publier, {'attr': {'class': 'button' , 'placeholder': 'Publier' } }) }}
+                                    </div>
+                                </div>
+                            </div>
+                        {{ form_end(annonceForm) }}
+                    </div>
+                    <div class="post-sidebar">
+                        <h5><i data-feather="arrow-down-circle"></i>Navigation</h5>
+                        <ul class="sidebar-menu">
+                            <li><a href="#job-title">Position</a></li>
+                            <li><a href="#job-summery">Résume travail</a></li>
+                            <li><a href="#job-description">Descrption travail</a></li>
+                            <li><a href="#response">Responsabilité</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#about-company">Sociéte</a></li>
+                        </ul>
+                            <!-- Modal -->
+                            <div class="account-entry">
+                                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title"><i data-feather="user"></i>Login</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <input type="email" placeholder="Email Address" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" placeholder="Password" class="form-control">
+                                                    </div>
+                                                    <div class="more-option">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                            <label class="form-check-label" for="defaultCheck1">
+                                                                Remember Me
+                                                            </label>
+                                                        </div>
+                                                        <a href="#">Forget Password?</a>
+                                                    </div>
+                                                    <button class="button primary-bg btn-block">Login</button>
+                                                </form>
+                                                <div class="shortcut-login">
+                                                    <span>Or connect with</span>
+                                                    <div class="buttons">
+                                                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i>Facebook</a>
+                                                        <a href="#" class="google"><i class="fab fa-google"></i>Google</a>
+                                                    </div>
+                                                    <p>Don't have an account? <a href="#">Register</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title"><i data-feather="edit"></i>Registration</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="account-type">
+                                                    <a href="#" class="candidate-acc active"><i data-feather="user"></i>Candidate</a>
+                                                    <a href="#" class="employer-acc"><i data-feather="briefcase"></i>Employer</a>
+                                                </div>
+                                                <form action="#">
+                                                    <div class="form-group">
+                                                        <input type="text" placeholder="Username" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" placeholder="Email Address" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" placeholder="Password" class="form-control">
+                                                    </div>
+                                                    <div class="more-option terms">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                            <label class="form-check-label" for="defaultCheck2">
+                                                                I accept the <a href="#">terms & conditions</a>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <button class="button primary-bg btn-block">Register</button>
+                                                </form>
+                                                <div class="shortcut-login">
+                                                    <span>Or connect with</span>
+                                                    <div class="buttons">
+                                                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i>Facebook</a>
+                                                        <a href="#" class="google"><i class="fab fa-google"></i>Google</a>
+                                                    </div>
+                                                    <p>Already have an account? <a href="#">Login</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="call-to-action-bg padding-top-90 padding-bottom-90">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="call-to-action-2">
+                    <div class="call-to-action-content">
+                        <h2>For Find Your Dream Job or Candidate</h2>
+                        <p>Add resume or post a job. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
+                    </div>
+                    <div class="call-to-action-button">
+                        <a href="add-resume.html" class="button">Add Resume</a>
+                        <span>Or</span>
+                        <a href="post-job.html" class="button">Post A Job</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Call to Action End -->
+
+<!-- Footer -->
+<footer class="footer-bg">
+
+    <div class="footer-widget-wrapper padding-bottom-60 padding-top-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-widget footer-shortcut-link">
+                        <h4>Informations</h4>
+                        <div class="widget-inner">
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-widget footer-shortcut-link">
+                        <h4>Job Seekers</h4>
+                        <div class="widget-inner">
+                            <ul>
+                                <li><a href="#">Create Account</a></li>
+                                <li><a href="#">Career Counseling</a></li>
+                                <li><a href="#">My Oficiona</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Video Guides</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-widget footer-shortcut-link">
+                        <h4>Employers</h4>
+                        <div class="widget-inner">
+                            <ul>
+                                <li><a href="#">Create Account</a></li>
+                                <li><a href="#">Products/Service</a></li>
+                                <li><a href="#">Post a Job</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-sm-6">
+                    <div class="footer-widget footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Get e-mail updates about our latest news and Special offers.</p>
+                        <form action="#" class="newsletter-form form-inline">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email address...">
+                            </div>
+                            <button class="btn button primary-bg">Submit<i class="fas fa-caret-right"></i></button>
+                            <p class="newsletter-error">0 - Please enter a value</p>
+                            <p class="newsletter-success">Thank you for subscribing!</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-bottom border-top">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-5 order-lg-2">
+
+                            </div>
+                            <div class="col-xl-4 col-lg-4 order-lg-1">
+                                <p class="copyright-text">Copyright <a href="#">MYJOBS</a> 2021, All right reserved</p>
+                            </div>
+                            <div class="col-xl-4 col-lg-3 order-lg-3">
+                                <div class="back-to-top">
+                                    <a href="#">Retour au sommet<i class="fas fa-angle-up"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{{ asset('build/final/assets/js/jquery.min.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/popper.min.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/feather.min.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/bootstrap-select.min.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/jquery.nstSlider.min.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/visible.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/jquery.countTo.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/chart.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/plyr.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/tinymce.min.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/slick.min.js') }}"></script>
+<script src="{{ asset('build/final/assets/js/jquery.ajaxchimp.min.js') }}"></script>
+
+
+<script src="{{ asset('build/final/js/custom.js') }}"></script>
+<script src="{{ asset('build/final/dashboard/js/dashboard.js') }}"></script>
+<script src="{{ asset('build/final/dashboard/js/datePicker.js') }}"></script>
+<script src="{{ asset('build/final/dashboard/js/upload-input.js') }}"></script>
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC87gjXWLqrHuLKR0CTV5jNLdP4pEHMhmg"></script>
+<script src="{{ asset('build/final/js/map.js') }}"></script>
+</body>
+</html>
